@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build and Run OpenGLTest",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "cmake --build build; ./build/OpenGLTest.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
